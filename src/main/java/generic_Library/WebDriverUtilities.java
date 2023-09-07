@@ -81,13 +81,5 @@ public class WebDriverUtilities
 			js.executeScript("Widows.scrollBy("+x+","+y+")");
 		}
 		
-//11.Handling ScrollBar without coordinates
-		public void scrollbarwithout()
-		{
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("arguments[0].scrollIntoView();",career);
-			Thread.sleep(4000);
-			js.executeScript("arguments[0].click();",career);
-			//career.click();
-		}
+
 }
